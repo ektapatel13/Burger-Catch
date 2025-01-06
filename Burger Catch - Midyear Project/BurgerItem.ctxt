@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=BurgerItem
+comment0.text=\n\ BurgerItem\ represents\ a\ piece\ of\ the\ burger\ (bread,\ tomato,\ cheese,\ etc.)\n\ It\ falls\ from\ the\ top\ of\ the\ screen\ to\ the\ bottom.\n
+comment1.params=itemType
+comment1.target=BurgerItem(java.lang.String)
+comment1.text=\n\ Constructor\ that\ takes\ a\ string\ indicating\ the\ item\ type.\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\n\ Called\ every\ frame\ (about\ 60\ times\ per\ second).\ Moves\ item\ down,\n\ checks\ if\ it\ reached\ bottom.\n
+comment3.params=
+comment3.target=java.lang.String\ getItemType()
+comment3.text=\n\ Return\ the\ itemType\ for\ the\ Plate\ to\ know\ which\ ingredient\ was\ caught.\n
+comment4.params=
+comment4.target=void\ setItemImage()
+comment4.text=\n\ Set\ the\ image\ according\ to\ itemType,\ possibly\ scaling\ it\ if\ desired.\n
+comment5.params=
+comment5.target=void\ fallDown()
+comment5.text=\n\ Move\ the\ item\ down\ by\ fallSpeed.\n
+comment6.params=
+comment6.target=void\ checkIfMissed()
+comment6.text=\n\ If\ the\ item\ reaches\ the\ bottom\ of\ the\ world,\ it's\ missed.\n\ Decrement\ score\ and\ remove\ it.\n
+numComments=7
