@@ -13,6 +13,5 @@ public class BurgerWorld extends World
     public void prepare() {
         Platee plate = new Platee();
         addObject(plate, 100, 100);
-        plate.scale(plate.getWidth()*10/100, plate.getHeight()*10/100);
     }
 }

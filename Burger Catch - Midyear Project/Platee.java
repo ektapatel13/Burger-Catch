@@ -5,6 +5,13 @@ public class Platee extends Actor
     public void act() {
         
     }
+    public Platee() {
+        GreenfootImage image = getImage();
+        image.scale(150, 150);
+    }
+    public void prepare() {
+        
+    }
     
     public void moveKeys() {
         if (Greenfoot.isKeyDown("left")) {
