@@ -8,7 +8,7 @@ import java.util.List;
  */
 public class Platee extends Actor
 {
-    private int speed = 5; // Speed at which the plate moves horizontally
+    private int speed = 5; // Speed at which the plate moves horizontall
 
 
     public Platee()

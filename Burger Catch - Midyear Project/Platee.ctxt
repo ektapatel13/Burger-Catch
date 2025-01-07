@@ -1,14 +1,14 @@
 #BlueJ class context
 comment0.target=Platee
-comment0.text=\n\ The\ Plate\ moves\ left\ and\ right\ with\ the\ arrow\ keys.\n\ It\ catches\ BurgerItems\ to\ increase\ score\ and\ stacks\ them\ visually.\n
+comment0.text=\r\n\ The\ Plate\ moves\ left\ and\ right\ with\ the\ arrow\ keys.\r\n\ It\ catches\ BurgerItems\ to\ increase\ score\ and\ stacks\ them\ visually.\r\n
 comment1.params=
 comment1.target=Platee()
 comment2.params=
 comment2.target=void\ act()
 comment3.params=
 comment3.target=void\ movePlate()
-comment3.text=\n\ Move\ the\ plate\ left\ or\ right\ based\ on\ arrow\ key\ presses.\n
+comment3.text=\r\n\ Move\ the\ plate\ left\ or\ right\ based\ on\ arrow\ key\ presses.\r\n
 comment4.params=
 comment4.target=void\ checkForCaughtItems()
-comment4.text=\n\ Checks\ if\ the\ plate\ intersects\ any\ BurgerItem.\n\ If\ so,\ increment\ the\ score,\ add\ the\ item\ type\ to\ our\ stack,\ and\ remove\ that\ item.\n
+comment4.text=\r\n\ Checks\ if\ the\ plate\ intersects\ any\ BurgerItem.\r\n\ If\ so,\ increment\ the\ score,\ add\ the\ item\ type\ to\ our\ stack,\ and\ remove\ that\ item.\r\n
 numComments=5
