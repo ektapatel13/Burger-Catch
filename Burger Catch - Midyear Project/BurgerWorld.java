@@ -12,6 +12,6 @@ public class BurgerWorld extends World
     
     public void prepare() {
         Platee plate = new Platee();
-        addObject(plate, 100, 100);
+        addObject(plate, 300, 350);
     }
 }
