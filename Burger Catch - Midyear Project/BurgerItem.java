@@ -6,8 +6,8 @@ import greenfoot.*;
  */
 public class BurgerItem extends Actor
 {
-    private String itemType;   // "tomato", "cheese", "lettuce", etc.
-    private int fallSpeed;     // How quickly the item falls
+    private String itemType;   
+    private int fallSpeed;    
 
     /**
      * Constructor that takes a string indicating the item type.
@@ -15,7 +15,6 @@ public class BurgerItem extends Actor
     public BurgerItem(String itemType)
     {
         this.itemType = itemType;
-        // Random fall speed from 1 to 4 (feel free to adjust range)
         fallSpeed = Greenfoot.getRandomNumber(4) + 1; 
 
         setItemImage();
@@ -71,7 +70,6 @@ public class BurgerItem extends Actor
         }
         else
         {
-            // A default image, in case itemType doesn't match anything
             img = new GreenfootImage("default_burger_item.png");
         }
 

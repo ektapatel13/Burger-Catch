@@ -15,7 +15,9 @@ public class Platee extends Actor
     {
         
         setImage("plateBase.png"); 
-        
+        int newWidth = Platee.getWidth() / 2;
+        int newHeight = Platee.getHeight() / 2;
+        Platee.scale(newWidth, newHeight);
     
     }
 
