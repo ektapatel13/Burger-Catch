@@ -28,7 +28,7 @@ public class BurgerItem extends Actor
     public void act()
     {
         fallDown();
-        checkIfMissed();
+        //checkIfMissed();
     }
 
     /**
@@ -95,13 +95,5 @@ public class BurgerItem extends Actor
      * If the item reaches the bottom of the world, it's missed.
      * Decrement score and remove it.
      */
-    private void checkIfMissed()
-    {
-        World world = getWorld();
-        if (getY() >= world.getHeight() - 1)
-        {
-            ((BurgerWorld)world).decrementScore();
-            world.removeObject(this);
-        }
-    }
+    
 }

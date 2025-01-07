@@ -18,16 +18,13 @@ public class Platee extends Actor
         // If you have a base Plate image, set it here
         // setImage("plateBase.png"); 
         // Or if you don't have a special plate image, let's just create a blank rectangle for demonstration.
-        GreenfootImage base = new GreenfootImage(100, 30); // width=100, height=30
-        base.setColor(Color.GRAY);
-        base.fillRect(0, 0, 100, 30);
-        setImage(base);
+    
     }
 
     public void act()
     {
         movePlate();
-        checkForCaughtItems();
+        //checkForCaughtItems();
     }
 
     /**
@@ -62,21 +59,7 @@ public class Platee extends Actor
      */
     private void checkForCaughtItems()
     {
-        BurgerItem item = (BurgerItem) getOneIntersectingObject(BurgerItem.class);
-        if (item != null)
-        {
-            // 1) Increase the score
-            ((BurgerWorld)getWorld()).incrementScore();
-
-            // 2) Add the item's type to the stack
-            caughtItems.add(item.getItemType());
-
-            // 3) Rebuild the Plate image to reflect the new stack
-            rebuildPlateImage();
-
-            // 4) Remove the falling item from the world
-            getWorld().removeObject(item);
-        }
+        
     }
 
     /**
