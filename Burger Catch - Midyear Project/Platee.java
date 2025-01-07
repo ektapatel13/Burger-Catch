@@ -8,14 +8,14 @@ import java.util.List;
  */
 public class Platee extends Actor
 {
-    private int speed = 5; // Speed at which the plate moves horizontally
+    private int speed = 5; 
 
 
     public Platee()
     {
-        // If you have a base Plate image, set it here
-        // setImage("plateBase.png"); 
-        // Or if you don't have a special plate image, let's just create a blank rectangle for demonstration.
+        
+        setImage("plateBase.png"); 
+        
     
     }
 
@@ -39,12 +39,12 @@ public class Platee extends Actor
             setLocation(getX() + speed, getY());
         }
 
-        // Prevent the plate from going off the left edge
+        
         if (getX() < 0)
         {
             setLocation(0, getY());
         }
-        // Prevent going off the right edge
+        
         if (getX() > getWorld().getWidth())
         {
             setLocation(getWorld().getWidth(), getY());

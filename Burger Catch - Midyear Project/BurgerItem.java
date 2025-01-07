@@ -75,10 +75,10 @@ public class BurgerItem extends Actor
             img = new GreenfootImage("default_burger_item.png");
         }
 
-        // EXAMPLE: Scale the falling image to half size, if you like
-        // int newWidth = img.getWidth() / 2;
-        // int newHeight = img.getHeight() / 2;
-        // img.scale(newWidth, newHeight);
+        
+        int newWidth = img.getWidth() / 2;
+        int newHeight = img.getHeight() / 2;
+        img.scale(newWidth, newHeight);
 
         setImage(img);
     }
