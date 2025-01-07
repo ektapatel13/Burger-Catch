@@ -1,11 +1,3 @@
 #BlueJ class context
 comment0.target=Platee
-comment1.params=
-comment1.target=Platee()
-comment2.params=
-comment2.target=void\ act()
-comment3.params=
-comment3.target=void\ movePlate()
-comment4.params=
-comment4.target=void\ checkForCaughtItems()
-numComments=5
+numComments=1
