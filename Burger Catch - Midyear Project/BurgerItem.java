@@ -1,17 +1,12 @@
 import greenfoot.*;
 
-/**
- * BurgerItem represents a piece of the burger (bread, tomato, cheese, etc.)
- * It falls from the top of the screen to the bottom.
- */
+
 public class BurgerItem extends Actor
 {
     private String itemType;   
     private int fallSpeed;    
 
-    /**
-     * Constructor that takes a string indicating the item type.
-     */
+    
     public BurgerItem(String itemType)
     {
         this.itemType = itemType;
@@ -20,27 +15,20 @@ public class BurgerItem extends Actor
         setItemImage();
     }
 
-    /**
-     * Called every frame (about 60 times per second). Moves item down,
-     * checks if it reached bottom.
-     */
+    
     public void act()
     {
         fallDown();
         //checkIfMissed();
     }
 
-    /**
-     * Return the itemType for the Plate to know which ingredient was caught.
-     */
+    
     public String getItemType()
     {
         return itemType;
     }
 
-    /**
-     * Set the image according to itemType, possibly scaling it if desired.
-     */
+    
     private void setItemImage()
     {
         GreenfootImage img;
@@ -81,17 +69,12 @@ public class BurgerItem extends Actor
         setImage(img);
     }
 
-    /**
-     * Move the item down by fallSpeed.
-     */
+    
     private void fallDown()
     {
         setLocation(getX(), getY() + fallSpeed);
     }
 
-    /**
-     * If the item reaches the bottom of the world, it's missed.
-     * Decrement score and remove it.
-     */
+    
     
 }
