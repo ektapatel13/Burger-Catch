@@ -17,24 +17,24 @@ public class BurgerWorld extends World
         return plate1.getX();
     }
     public void act(){
-        if (Greenfoot.getRandomNumber(100) < 1) {
+       if (Greenfoot.getRandomNumber(100) < 2) {
             spawnIngredient();
-        }
+       }
+        //This made it spawn too many ingredients so i removed it 
+        //if(count == 0){
+            //addObject(new Cheese(), Greenfoot.getRandomNumber(getWidth()), 0);
+        //}
+        //if(Greenfoot.getRandomNumber(100)>98){
+          //  addObject(new Patty(), Greenfoot.getRandomNumber(getWidth()), 0);
+        //}
+        //if(Greenfoot.getRandomNumber(100)>98){
+          //  addObject(new Lettuce(), Greenfoot.getRandomNumber(getWidth()), 0);
+        //}
+        //if(Greenfoot.getRandomNumber(100)>98){
+          //  addObject(new Tomato(), Greenfoot.getRandomNumber(getWidth()), 0);
         
-        if(count == 0){
-            addObject(new Cheese(), Greenfoot.getRandomNumber(getWidth()), 0);
-        }
-        if(Greenfoot.getRandomNumber(100)>98){
-            addObject(new Patty(), Greenfoot.getRandomNumber(getWidth()), 0);
-        }
-        if(Greenfoot.getRandomNumber(100)>98){
-            addObject(new Lettuce(), Greenfoot.getRandomNumber(getWidth()), 0);
-        }
-        if(Greenfoot.getRandomNumber(100)>98){
-            addObject(new Tomato(), Greenfoot.getRandomNumber(getWidth()), 0);
-        
-        }
-        count++;
+        //}
+        count+=50;
     }
     
     public void spawnIngredient() {
