@@ -1,3 +1,4 @@
+
 import greenfoot.*;  
 
 public class BurgerWorld extends World
@@ -16,51 +17,27 @@ public class BurgerWorld extends World
         return plate1.getX();
     }
     public void act(){
-        if(count == 0){
-            addObject(new BurgerBottom(), Greenfoot.getRandomNumber(900)-100, 60);
+        if (Greenfoot.getRandomNumber(100) < 1) {
+            spawnIngredient();
         }
-        if(Greenfoot.getRandomNumber(100)>98.5){
-            addObject(new Cheese(), Greenfoot.getRandomNumber(900)-100, 60);
+        
+        if(count == 0){
+            addObject(new BurgerBottom(), Greenfoot.getRandomNumber(getWidth()), 60);
         }
         if(Greenfoot.getRandomNumber(100)>98){
-            addObject(new Patty(), Greenfoot.getRandomNumber(900)-80, 100);
+            addObject(new Cheese(), Greenfoot.getRandomNumber(getWidth()), 60);
         }
-        if(Greenfoot.getRandomNumber(100)>98.3){
-            addObject(new Lettuce(), Greenfoot.getRandomNumber(900)-80, 100);
+        if(Greenfoot.getRandomNumber(100)>98){
+            addObject(new Patty(), Greenfoot.getRandomNumber(getWidth()), 60);
         }
-        if(Greenfoot.getRandomNumber(100)>98.89){
-            addObject(new Tomato(), Greenfoot.getRandomNumber(900)-100, 100);
+        if(Greenfoot.getRandomNumber(100)>98){
+            addObject(new Lettuce(), Greenfoot.getRandomNumber(getWidth()), 60);
+        }
+        if(Greenfoot.getRandomNumber(100)>98){
+            addObject(new Tomato(), Greenfoot.getRandomNumber(getWidth()), 60);
         
         }
         count++;
-    }
-    
-    public void act() {
-        if (Greenfoot.getRandomNumber(100) < 0.85) {
-            spawnIngredient();
-        }
-    }
-    
-    public void spawnIngredient() {
-        int pick = Greenfoot.getRandomNumber(4);
-        Actor ingredient;
-        if (pick == 0) {
-            ingredient = new Tomato();
-        } else if (pick == 1) {
-            ingredient = new Cheese();
-        } else if (pick == 2) {
-            ingredient = new Patty();
-        } else {
-            ingredient = new Lettuce();
-        }
-        
-        addObject(ingredient, Greenfoot.getRandomNumber(getWidth()), 0);
-    }
-    
-    public void act() {
-        if (Greenfoot.getRandomNumber(100) < 0.85) {
-            spawnIngredient();
-        }
     }
     
     public void spawnIngredient() {

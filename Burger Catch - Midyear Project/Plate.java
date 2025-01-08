@@ -1,3 +1,4 @@
+
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
@@ -13,7 +14,7 @@ public class Plate extends Actor
     }
     public Plate() {
         GreenfootImage image = getImage();
-        image.scale(300, 300);
+        image.scale(150, 150);
     }
     public void prepare() {
         
