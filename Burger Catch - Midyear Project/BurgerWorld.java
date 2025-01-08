@@ -6,19 +6,22 @@ public class BurgerWorld extends World
     private int count = 0;
     public int foodCount = 0;
     Plate plate1 = new Plate(); 
+    private boolean bottomHasLanded = false;
     public BurgerWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
         addObject(plate1, 300, 340);
-
+        addObject(new BurgerBottom(), getWidth()/2, 0);
     }
     public int getPlateX(){
         return plate1.getX();
     }
     public void act(){
-        if (Greenfoot.getRandomNumber(100) < 1) {
-            spawnIngredient();
+        if (bottomHasLanded) {
+            if (Greenfoot.getRandomNumber(100) < 1) {
+                spawnIngredient();
+            }
         }
         
         if(count == 0){
@@ -36,7 +39,9 @@ public class BurgerWorld extends World
         }
         count++;
     }
-    
+    public void setBottomHasLanded(boolean value) {
+        bottomHasLanded = value;
+    }
     public void spawnIngredient() {
         int pick = Greenfoot.getRandomNumber(4);
         Actor ingredient;
