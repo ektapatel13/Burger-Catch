@@ -14,18 +14,18 @@ public class Plate extends Actor
     }
     public Plate() {
         GreenfootImage image = getImage();
-        image.scale(150, 150);
+        image.scale(220, 220);
     }
-    public void prepare() {
+    public void prepare(){
         
     }
     
     public void moveKeys() {
         if (Greenfoot.isKeyDown("left")) {
-            setLocation(getX()-6, getY());
+            setLocation(getX()-5, getY());
         }
         if (Greenfoot.isKeyDown("right")) {
-            setLocation(getX()+6, getY());
+            setLocation(getX()+5, getY());
         }
     }
     

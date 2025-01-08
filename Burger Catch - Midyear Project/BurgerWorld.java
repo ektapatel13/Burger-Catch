@@ -23,7 +23,7 @@ public class BurgerWorld extends World
                 spawnIngredient();
             }
         }
-        
+        /*
         if(count == 0){
             addObject(new Cheese(), Greenfoot.getRandomNumber(getWidth()), 0);
         }
@@ -37,13 +37,13 @@ public class BurgerWorld extends World
             addObject(new Tomato(), Greenfoot.getRandomNumber(getWidth()), 0);
         
         }
-        count++;
+        count++;*/
     }
     public void setBottomHasLanded(boolean value) {
         bottomHasLanded = value;
     }
     public void spawnIngredient() {
-        int pick = Greenfoot.getRandomNumber(4);
+        int pick = (int)Greenfoot.getRandomNumber(4);
         Actor ingredient;
         if (pick == 0) {
             ingredient = new Tomato();

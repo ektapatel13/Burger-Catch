@@ -15,8 +15,8 @@ public class BurgerBottom extends Actor
      */
     public BurgerBottom() {
         GreenfootImage image = getImage();
-        image.scale(100, 100);
-        speed = Greenfoot.getRandomNumber(4) + 2;
+        image.scale(130, 130);
+        speed = Greenfoot.getRandomNumber(3) + 2;
     }
     public void act()
     {
@@ -24,14 +24,11 @@ public class BurgerBottom extends Actor
     }
     public void moving(){
         BurgerWorld world = (BurgerWorld)getWorld();
-        int plateX = world.getPlateX();
+        int plateX = ((BurgerWorld)getWorld()).getPlateX();
         
         // If it lands on the plate
         if(getY() > 340 && getY() < 350 && getX() <= plateX + 70 && getX() >= plateX - 70){
-            if(speed != 0) {
-                world.foodCount++;
-                // Step 2: Once speed hits 0, let the world know we've landed
-            }
+            
             speed = 0;
             
             // Let the world know the bottom has landed
@@ -39,10 +36,10 @@ public class BurgerBottom extends Actor
             
             // Now handle moving left/right if keys are pressed...
             if(Greenfoot.isKeyDown("right")){
-                move(4);
+                move(5);
             }
             if(Greenfoot.isKeyDown("left")){
-                move(-4);
+                move(-5);
             }
         }
         
