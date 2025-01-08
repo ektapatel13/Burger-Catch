@@ -28,6 +28,7 @@ public class Cheese extends Actor
     {
         moving();
         stack();
+        isTouchingEdge();
     }
     public void moving(){
         
@@ -48,18 +49,17 @@ public class Cheese extends Actor
         }
         
         setLocation(getX(), getY()+speed);
-        //if(getY() > 390){
-            //getWorld().removeObject(this); 
-        //}
+    }
+    public void isTouchingEdge() {
+        if (getY() >= getWorld().getHeight() - 1) {
+            getWorld().removeObject(this);
+            return; 
+        }
     }
     public void stack(){
         if(((BurgerWorld)getWorld()).foodCount > 0 && getY()>340 - increment && getY()<350 - increment && getX()<=plateX + 70  && getX()>=plateX - 70){
             speed = 0;
         }
-        setLocation(getX(), getY() + speed);
         
-        if (getY() >= getWorld().getHeight()) {
-            getWorld().removeObject(this);
-        }
     }
 }

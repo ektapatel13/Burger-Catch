@@ -1,10 +1,4 @@
 #BlueJ class context
 comment0.target=BurgerBottom
 comment0.text=\n\ Write\ a\ description\ of\ class\ BurgerBottom\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
-comment1.params=
-comment1.target=BurgerBottom()
-comment2.params=
-comment2.target=void\ act()
-comment3.params=
-comment3.target=void\ moving()
-numComments=4
+numComments=1

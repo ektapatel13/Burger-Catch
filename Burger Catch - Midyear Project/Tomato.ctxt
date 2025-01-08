@@ -1,13 +1,16 @@
 #BlueJ class context
 comment0.target=Tomato
-comment0.text=\n\ Write\ a\ description\ of\ class\ Tomato\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ Write\ a\ description\ of\ class\ Cheese\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=w
 comment1.target=void\ addedToWorld(greenfoot.World)
 comment2.params=
-comment2.target=void\ act()
-comment2.text=\n\ Act\ -\ do\ whatever\ the\ Tomato\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment2.target=Tomato()
 comment3.params=
-comment3.target=void\ moving()
+comment3.target=void\ act()
 comment4.params=
-comment4.target=Tomato()
-numComments=5
+comment4.target=void\ moving()
+comment5.params=
+comment5.target=void\ isTouchingEdge()
+comment6.params=
+comment6.target=void\ stack()
+numComments=7

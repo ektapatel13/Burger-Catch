@@ -22,19 +22,16 @@ public class BurgerWorld extends World
         }
         
         if(count == 0){
-            addObject(new BurgerBottom(), Greenfoot.getRandomNumber(getWidth()), 60);
+            addObject(new Cheese(), Greenfoot.getRandomNumber(getWidth()), 0);
         }
         if(Greenfoot.getRandomNumber(100)>98){
-            addObject(new Cheese(), Greenfoot.getRandomNumber(getWidth()), 60);
+            addObject(new Patty(), Greenfoot.getRandomNumber(getWidth()), 0);
         }
         if(Greenfoot.getRandomNumber(100)>98){
-            addObject(new Patty(), Greenfoot.getRandomNumber(getWidth()), 60);
+            addObject(new Lettuce(), Greenfoot.getRandomNumber(getWidth()), 0);
         }
         if(Greenfoot.getRandomNumber(100)>98){
-            addObject(new Lettuce(), Greenfoot.getRandomNumber(getWidth()), 60);
-        }
-        if(Greenfoot.getRandomNumber(100)>98){
-            addObject(new Tomato(), Greenfoot.getRandomNumber(getWidth()), 60);
+            addObject(new Tomato(), Greenfoot.getRandomNumber(getWidth()), 0);
         
         }
         count++;
