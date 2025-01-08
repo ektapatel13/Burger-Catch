@@ -2,8 +2,18 @@
 comment0.target=Tomato
 comment0.text=\n\ Write\ a\ description\ of\ class\ Tomato\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
+<<<<<<< HEAD
+comment1.target=Tomato()
+comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Tomato\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ moving()
+numComments=4
+=======
 comment1.target=void\ act()
 comment1.text=\n\ Act\ -\ do\ whatever\ the\ Tomato\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
 comment2.params=
 comment2.target=Tomato()
 numComments=3
+>>>>>>> 7d9e130a1ca6e889ca8349742f6d8f09271429d7

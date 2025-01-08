@@ -3,9 +3,16 @@ comment0.target=BurgerWorld
 comment1.params=
 comment1.target=BurgerWorld()
 comment2.params=
+<<<<<<< HEAD
+comment2.target=int\ getPlateX()
+comment3.params=
+comment3.target=void\ act()
+numComments=4
+=======
 comment2.target=void\ prepare()
 comment3.params=
 comment3.target=void\ act()
 comment4.params=
 comment4.target=void\ spawnIngredient()
 numComments=5
+>>>>>>> 7d9e130a1ca6e889ca8349742f6d8f09271429d7
