@@ -6,18 +6,22 @@ public class BurgerWorld extends World
     private int count = 0;
     public int foodCount = 0;
     Plate plate1 = new Plate(); 
+    private boolean bottomHasLanded = false;
     public BurgerWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
         addObject(plate1, 300, 340);
-
+        addObject(new BurgerBottom(), getWidth()/2, 0);
+    }
+    public void setBottomHasLanded(boolean value) {
+        bottomHasLanded = value;
     }
     public int getPlateX(){
         return plate1.getX();
     }
     public void act(){
-       if (Greenfoot.getRandomNumber(100) < 2) {
+       if (Greenfoot.getRandomNumber(100) < 1) {
             spawnIngredient();
        }
         //This made it spawn too many ingredients so i removed it 

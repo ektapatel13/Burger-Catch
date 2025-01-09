@@ -15,6 +15,9 @@ public class Patty extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
 
+    private int plateX;
+    private int increment = 0;
+    
     public Patty(){
         GreenfootImage image = getImage();
         image.scale(100, 100);
@@ -26,6 +29,7 @@ public class Patty extends Actor
         
         isTouchingEdge();
     }
+    
     public void moving(){
         int plateX = ((BurgerWorld)getWorld()).getPlateX();
         if(getY() > 340 && getY() < 350 && getX() <= plateX + 70 && getX() >= plateX - 70){
