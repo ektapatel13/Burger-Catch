@@ -9,10 +9,4 @@ comment3.params=
 comment3.target=void\ moving()
 comment4.params=
 comment4.target=void\ isTouchingEdge()
-<<<<<<< Updated upstream
 numComments=5
-=======
-comment5.params=
-comment5.target=void\ stack()
-numComments=6
->>>>>>> Stashed changes

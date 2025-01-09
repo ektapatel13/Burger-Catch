@@ -26,27 +26,11 @@ public class Tomato extends Actor
     public void act()
     {
         moving();
-<<<<<<< Updated upstream
         isTouchingEdge();
     }
-=======
-        
-        isTouchingEdge();
-    }
-    
-    public void moving(){
-        
-        if(getY() > 340 && getY() < 350 && getX() <= plateX + 70 && getX() >= plateX - 70){
-            if(speed != 0){
-                 ((BurgerWorld)getWorld()).foodCount++;
-                 increment += 20;
-                 //return;
-            }
->>>>>>> Stashed changes
-    
     public void moving(){
         int plateX = ((BurgerWorld)getWorld()).getPlateX();
-        if(getY() > 340 && getY() < 350 && getX() <= plateX + 70 && getX() >= plateX - 70){
+        if(getY() > 350 && getY() < 360 && getX() <= plateX + 70 && getX() >= plateX - 70){
             speed = 0;
             if(Greenfoot.isKeyDown("right")){
                 move(5);
@@ -57,13 +41,13 @@ public class Tomato extends Actor
         }
         
         setLocation(getX(), getY()+speed);
+
     }
-    
     public void isTouchingEdge() {
         if (getY() > 390) {
             getWorld().removeObject(this);
             return; 
         }
     }
-    
-}
+        
+    }
