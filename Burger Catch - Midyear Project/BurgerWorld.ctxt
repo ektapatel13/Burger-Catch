@@ -2,12 +2,12 @@
 comment0.target=BurgerWorld
 comment1.params=
 comment1.target=BurgerWorld()
-comment2.params=
-comment2.target=int\ getPlateX()
+comment2.params=value
+comment2.target=void\ setBottomHasLanded(boolean)
 comment3.params=
-comment3.target=void\ act()
-comment4.params=value
-comment4.target=void\ setBottomHasLanded(boolean)
+comment3.target=int\ getPlateX()
+comment4.params=
+comment4.target=void\ act()
 comment5.params=
 comment5.target=void\ spawnIngredient()
 numComments=6

@@ -1,5 +1,6 @@
 
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
+import java.util.List;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class Plate here.
@@ -11,7 +12,9 @@ public class Plate extends Actor
 {
     public void act() {
         moveKeys();
+        
     }
+    
     public Plate() {
         GreenfootImage image = getImage();
         image.scale(150, 150);

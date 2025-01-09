@@ -24,10 +24,9 @@ public class Lettuce extends Actor
     public void act()
     {
         moving();
-
-        
         isTouchingEdge();
     }
+    
     public void moving(){
         int plateX = ((BurgerWorld)getWorld()).getPlateX();
         if(getY() > 350 && getY() < 360 && getX() <= plateX + 70 && getX() >= plateX - 70){
@@ -42,6 +41,7 @@ public class Lettuce extends Actor
         
         setLocation(getX(), getY()+speed);
     }
+    
     public void isTouchingEdge() {
         if (getY() > 390) {
             getWorld().removeObject(this);
