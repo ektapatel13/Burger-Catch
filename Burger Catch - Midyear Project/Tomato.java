@@ -26,8 +26,23 @@ public class Tomato extends Actor
     public void act()
     {
         moving();
+<<<<<<< Updated upstream
         isTouchingEdge();
     }
+=======
+        
+        isTouchingEdge();
+    }
+    
+    public void moving(){
+        
+        if(getY() > 340 && getY() < 350 && getX() <= plateX + 70 && getX() >= plateX - 70){
+            if(speed != 0){
+                 ((BurgerWorld)getWorld()).foodCount++;
+                 increment += 20;
+                 //return;
+            }
+>>>>>>> Stashed changes
     
     public void moving(){
         int plateX = ((BurgerWorld)getWorld()).getPlateX();
