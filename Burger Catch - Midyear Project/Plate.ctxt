@@ -9,4 +9,6 @@ comment3.params=
 comment3.target=void\ prepare()
 comment4.params=
 comment4.target=void\ moveKeys()
-numComments=5
+comment5.params=
+comment5.target=int\ getPlateX()
+numComments=6

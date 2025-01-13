@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class BurgerBottom extends Actor
 {
     private int speed = 2;
+    private int x = 0;
 
     /**
      * Act - do whatever the BurgerBottom wants to do. This method is called whenever
@@ -17,7 +18,7 @@ public class BurgerBottom extends Actor
     public BurgerBottom() {
         GreenfootImage image = getImage();
         image.scale(130, 130);
-        speed = Greenfoot.getRandomNumber(3) + 2;
+        speed = 7;
     }
     public void act()
     {
@@ -27,14 +28,14 @@ public class BurgerBottom extends Actor
         BurgerWorld world = (BurgerWorld)getWorld();
         int plateX = ((BurgerWorld)getWorld()).getPlateX();
         
-        if(getY() > 340 && getY() < 350 && getX() <= plateX + 70 && getX() >= plateX - 70) {
+        if(getY() >= ((BurgerWorld)getWorld()). getStackHeight() && getX() <= plateX + 70 && getX() >= plateX - 70) {
             speed = 0;
-            world.setBottomHasLanded(true);
+            ((BurgerWorld)getWorld()).updateStackHeight(getY() - 15);
             if(Greenfoot.isKeyDown("right")) {
-                move(5);
+                move(8);
             }
             if(Greenfoot.isKeyDown("left")) {
-                move(-5);
+                move(-8);
             }
         }
         
@@ -42,5 +43,13 @@ public class BurgerBottom extends Actor
         if (getY() > 390) {
             world.removeObject(this);
         }
+    }
+    public void isTouchingEdge() {
+        if (getY() > 390) {
+            ((BurgerWorld)getWorld()).addScore(-1);
+            getWorld().removeObject(this);
+            return; 
+        }
+        
     }
 }
