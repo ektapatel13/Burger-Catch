@@ -7,40 +7,52 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Patty extends Actor
+public class Patty extends IngredientBase
 {
-    private int speed = 2;
+    //private int speed = 2;
+    //private boolean didScore = false;
     
     public Patty(){
         GreenfootImage image = getImage();
         image.scale(100, 100);
-        speed = Greenfoot.getRandomNumber(3) + 2;
+        //speed = Greenfoot.getRandomNumber(3) + 2;
     }
-    public void act()
-    {
-        moving();
-        isTouchingEdge();
-    }
-public void moving(){
-        int plateX = ((BurgerWorld)getWorld()).getPlateX();
-        if(getY() > 350 && getY() < 360 && getX() <= plateX + 70 && getX() >= plateX - 70){
-            speed = 0;
-            if(Greenfoot.isKeyDown("right")){
-                move(5);
-            }
-            if(Greenfoot.isKeyDown("left")){
-                move(-5);
-            }
-        }
+    //public void act()
+    //{
+        //moving();
+        //isTouchingEdge();
         
-        setLocation(getX(), getY()+speed);
+    //}
+    
+    
+    //public void moving(){
+      //  BurgerWorld world = (BurgerWorld) getWorld();
+        //int plateX = world.getPlateX();
+       // setLocation(getX(), getY() + speed);
+    //    if(getY() >= ((BurgerWorld)getWorld()).getStackHeight() && getX() <= plateX + 70 && getX() >= plateX - 70) {
+      //      speed = 0;
+        //    ((BurgerWorld)getWorld()).updateStackHeight(getY() - 20);
+            
+          //  if(didScore==false &&  (isTouching(Plate.class) || isTouching(Patty.class) || isTouching(Lettuce.class) || isTouching(Tomato.class) || isTouching(Cheese.class) || isTouching(BurgerBottom.class))) {
+            //    ((BurgerWorld)getWorld()).addScore(1);
+              //  didScore = true;
+            //}
+  //          if(Greenfoot.isKeyDown("right")) {
+    //            move(8);
+      //      }
+        //    if(Greenfoot.isKeyDown("left")) {
+          //      move(-8);
+           // }
+        //}
 
-    }
-    public void isTouchingEdge() {
-        if (getY() > 390) {
-            getWorld().removeObject(this);
-            return; 
-        }
-    }
+    //}
+    //public void isTouchingEdge() {
+        //if (getY() > 390) {
+            //((BurgerWorld)getWorld()).addScore(-1);
+            //getWorld().removeObject(this);
+            //return; 
+        //}
+        
+    //}
     
 }

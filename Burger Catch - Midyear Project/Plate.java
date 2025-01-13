@@ -25,11 +25,16 @@ public class Plate extends Actor
     
     public void moveKeys() {
         if (Greenfoot.isKeyDown("left")) {
-            setLocation(getX()-5, getY());
+            setLocation(getX()-8, getY());
         }
         if (Greenfoot.isKeyDown("right")) {
-            setLocation(getX()+5, getY());
+            setLocation(getX()+8, getY());
         }
     }
+    
+    public int getPlateX() {
+        return getX();
+    }
+    
     
 }
