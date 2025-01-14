@@ -1,7 +1,7 @@
 
 import greenfoot.*;  
 
-public class BurgerWorld extends World
+public class BurgerWorldTwo extends World
 {
     private Plate plate1 = new Plate();
     private int count = 0;
@@ -13,7 +13,7 @@ public class BurgerWorld extends World
     private int maxHeight = 380;
     private boolean spawnIngredients = true; // Controls whether ingredients should spawn
     private boolean burgerTopSpawned = false; // Ensures only one Burger Top spawns
-    public BurgerWorld()
+    public BurgerWorldTwo()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
@@ -83,7 +83,7 @@ public class BurgerWorld extends World
     }
 
     public void levelCompleted() {
-        showText("Level Completed! Click the Button to continue.", 300, 150);
+        showText("Level Completed! Click the Button to continue or press exit to end the game.", 200, 200);
         addObject(new NextLevel(), getWidth() / 2, getHeight() / 2 + 50);
         //clearIngredients();
     }
@@ -113,7 +113,7 @@ public class BurgerWorld extends World
             ingredient = new Lettuce();
         }
         
-        if (score >= 10) {
+        if (score >= 20) {
             ingredient = new BurgerTop(); 
         }
         

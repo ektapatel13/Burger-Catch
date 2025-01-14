@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version (a version number or a date)
  */
 public class IngredientBase extends Actor {
-    protected int speed = Greenfoot.getRandomNumber(3) + 1;
+    protected int speed = Greenfoot.getRandomNumber(3) + 2;
     protected boolean didScore = false;
     
     public void act() {

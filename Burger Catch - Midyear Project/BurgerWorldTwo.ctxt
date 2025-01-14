@@ -1,7 +1,7 @@
 #BlueJ class context
-comment0.target=BurgerWorld
+comment0.target=BurgerWorldTwo
 comment1.params=
-comment1.target=BurgerWorld()
+comment1.target=BurgerWorldTwo()
 comment10.params=points
 comment10.target=void\ addScore(int)
 comment11.params=

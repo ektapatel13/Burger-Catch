@@ -9,12 +9,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class MainMenu extends World {
     public MainMenu() {
-        super(600, 400, 1); 
+        super(660, 400, 1); 
         prepare();
     }
 
     private void prepare() {
         StartButton startButton = new StartButton();
-        addObject(startButton, getWidth() / 2, getHeight() / 2);
+        addObject(startButton, 330, 300);   
     }
 }

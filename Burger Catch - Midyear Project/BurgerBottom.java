@@ -23,6 +23,7 @@ public class BurgerBottom extends Actor
     public void act()
     {
         moving();
+        isTouchingEdge();
     }
     public void moving() {
         BurgerWorld world = (BurgerWorld)getWorld();
