@@ -5,6 +5,7 @@ class.BurgerTop.image=bread_top.png
 class.BurgerWorld.image=Restaurant.png
 class.BurgerWorldTwo.image=Restaurant.png
 class.Cheese.image=cheese.png
+<<<<<<< HEAD
 class.ExitButton.image=exitbutton.png
 class.Instructions.image=instructions\ new.png
 class.InstructionsMenu.image=mainmenu.png
@@ -15,13 +16,16 @@ class.MainMenu.image=mainbgr.png
 class.MoldyBread.image=moldybread.png
 class.NextLevel.image=nextlevel.png
 class.Onion.image=onion.png
+=======
+class.Lettuce.image=lettuce.png
+>>>>>>> befe853406eba016e8a57a64d846ab1cb3d755c2
 class.Patty.image=patty.png
 class.Plate.image=Plate.png
-class.StartButton.image=startbutton.png
 class.Tomato.image=tomato.png
 dependency1.from=BurgerWorld
 dependency1.to=Plate
 dependency1.type=UsesDependency
+<<<<<<< HEAD
 dependency10.from=BurgerWorld
 dependency10.to=Lettuce
 dependency10.type=UsesDependency
@@ -51,10 +55,42 @@ dependency18.to=Patty
 dependency18.type=UsesDependency
 dependency19.from=BurgerWorldTwo
 dependency19.to=MoldyBread
+=======
+dependency10.from=Lettuce
+dependency10.to=Cheese
+dependency10.type=UsesDependency
+dependency11.from=Lettuce
+dependency11.to=Patty
+dependency11.type=UsesDependency
+dependency12.from=Lettuce
+dependency12.to=Tomato
+dependency12.type=UsesDependency
+dependency13.from=Cheese
+dependency13.to=BurgerWorld
+dependency13.type=UsesDependency
+dependency14.from=Cheese
+dependency14.to=Plate
+dependency14.type=UsesDependency
+dependency15.from=Cheese
+dependency15.to=BurgerBottom
+dependency15.type=UsesDependency
+dependency16.from=Cheese
+dependency16.to=Lettuce
+dependency16.type=UsesDependency
+dependency17.from=Cheese
+dependency17.to=Patty
+dependency17.type=UsesDependency
+dependency18.from=Cheese
+dependency18.to=Tomato
+dependency18.type=UsesDependency
+dependency19.from=Tomato
+dependency19.to=BurgerWorld
+>>>>>>> befe853406eba016e8a57a64d846ab1cb3d755c2
 dependency19.type=UsesDependency
 dependency2.from=BurgerWorld
 dependency2.to=BurgerBottom
 dependency2.type=UsesDependency
+<<<<<<< HEAD
 dependency20.from=BurgerWorldTwo
 dependency20.to=Lettuce
 dependency20.type=UsesDependency
@@ -83,11 +119,42 @@ dependency28.from=Onion
 dependency28.to=Patty
 dependency28.type=UsesDependency
 dependency29.from=Onion
+=======
+dependency20.from=Tomato
+dependency20.to=Plate
+dependency20.type=UsesDependency
+dependency21.from=Tomato
+dependency21.to=BurgerBottom
+dependency21.type=UsesDependency
+dependency22.from=Tomato
+dependency22.to=Cheese
+dependency22.type=UsesDependency
+dependency23.from=Tomato
+dependency23.to=Lettuce
+dependency23.type=UsesDependency
+dependency24.from=Tomato
+dependency24.to=Patty
+dependency24.type=UsesDependency
+dependency25.from=Patty
+dependency25.to=BurgerWorld
+dependency25.type=UsesDependency
+dependency26.from=Patty
+dependency26.to=Plate
+dependency26.type=UsesDependency
+dependency27.from=Patty
+dependency27.to=BurgerBottom
+dependency27.type=UsesDependency
+dependency28.from=Patty
+dependency28.to=Cheese
+dependency28.type=UsesDependency
+dependency29.from=Patty
+>>>>>>> befe853406eba016e8a57a64d846ab1cb3d755c2
 dependency29.to=Lettuce
 dependency29.type=UsesDependency
 dependency3.from=BurgerWorld
 dependency3.to=BurgerTop
 dependency3.type=UsesDependency
+<<<<<<< HEAD
 dependency30.from=Onion
 dependency30.to=Tomato
 dependency30.type=UsesDependency
@@ -118,6 +185,32 @@ dependency38.type=UsesDependency
 dependency39.from=MoldyBread
 dependency39.to=Tomato
 dependency39.type=UsesDependency
+=======
+dependency30.from=Patty
+dependency30.to=Tomato
+dependency30.type=UsesDependency
+dependency31.from=BurgerBottom
+dependency31.to=BurgerWorld
+dependency31.type=UsesDependency
+dependency32.from=BurgerBottom
+dependency32.to=Plate
+dependency32.type=UsesDependency
+dependency33.from=BurgerBottom
+dependency33.to=Cheese
+dependency33.type=UsesDependency
+dependency34.from=BurgerBottom
+dependency34.to=Lettuce
+dependency34.type=UsesDependency
+dependency35.from=BurgerBottom
+dependency35.to=Patty
+dependency35.type=UsesDependency
+dependency36.from=BurgerBottom
+dependency36.to=Tomato
+dependency36.type=UsesDependency
+dependency37.from=Plate
+dependency37.to=BurgerWorld
+dependency37.type=UsesDependency
+>>>>>>> befe853406eba016e8a57a64d846ab1cb3d755c2
 dependency4.from=BurgerWorld
 dependency4.to=NextLevel
 dependency4.type=UsesDependency
@@ -146,6 +239,7 @@ dependency5.from=BurgerWorld
 dependency5.to=BurgerWorldTwo
 dependency5.type=UsesDependency
 dependency6.from=BurgerWorld
+<<<<<<< HEAD
 dependency6.to=Tomato
 dependency6.type=UsesDependency
 dependency7.from=BurgerWorld
@@ -164,6 +258,26 @@ editor.fx.0.y=37
 height=877
 package.numDependencies=46
 package.numTargets=21
+=======
+dependency6.to=Lettuce
+dependency6.type=UsesDependency
+dependency7.from=Lettuce
+dependency7.to=BurgerWorld
+dependency7.type=UsesDependency
+dependency8.from=Lettuce
+dependency8.to=Plate
+dependency8.type=UsesDependency
+dependency9.from=Lettuce
+dependency9.to=BurgerBottom
+dependency9.type=UsesDependency
+editor.fx.0.height=766
+editor.fx.0.width=1294
+editor.fx.0.x=-7
+editor.fx.0.y=-7
+height=584
+package.numDependencies=37
+package.numTargets=9
+>>>>>>> befe853406eba016e8a57a64d846ab1cb3d755c2
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -179,12 +293,17 @@ readme.x=10
 readme.y=10
 simulation.speed=50
 target1.height=70
+<<<<<<< HEAD
 target1.name=ExitButton
+=======
+target1.name=Lettuce
+>>>>>>> befe853406eba016e8a57a64d846ab1cb3d755c2
 target1.showInterface=false
 target1.type=ClassTarget
 target1.width=120
 target1.x=0
 target1.y=0
+<<<<<<< HEAD
 target10.height=70
 target10.name=MainMenu
 target10.showInterface=false
@@ -257,6 +376,10 @@ target19.x=0
 target19.y=0
 target2.height=70
 target2.name=Onion
+=======
+target2.height=70
+target2.name=BurgerItem
+>>>>>>> befe853406eba016e8a57a64d846ab1cb3d755c2
 target2.showInterface=false
 target2.type=ClassTarget
 target2.width=120
@@ -291,7 +414,11 @@ target4.width=120
 target4.x=0
 target4.y=0
 target5.height=70
+<<<<<<< HEAD
 target5.name=Cheese
+=======
+target5.name=BurgerTop
+>>>>>>> befe853406eba016e8a57a64d846ab1cb3d755c2
 target5.showInterface=false
 target5.type=ClassTarget
 target5.width=120
@@ -305,14 +432,22 @@ target6.width=120
 target6.x=0
 target6.y=0
 target7.height=70
+<<<<<<< HEAD
 target7.name=BurgerWorldTwo
+=======
+target7.name=Patty
+>>>>>>> befe853406eba016e8a57a64d846ab1cb3d755c2
 target7.showInterface=false
 target7.type=ClassTarget
 target7.width=120
 target7.x=0
 target7.y=0
 target8.height=70
+<<<<<<< HEAD
 target8.name=Tomato
+=======
+target8.name=BurgerBottom
+>>>>>>> befe853406eba016e8a57a64d846ab1cb3d755c2
 target8.showInterface=false
 target8.type=ClassTarget
 target8.width=120
@@ -326,7 +461,14 @@ target9.width=120
 target9.x=0
 target9.y=0
 version=3.1.0
+<<<<<<< HEAD
 width=1500
 world.lastInstantiated=MainMenu
 xPosition=0
 yPosition=38
+=======
+width=871
+world.lastInstantiated=BurgerWorld
+xPosition=188
+yPosition=64
+>>>>>>> befe853406eba016e8a57a64d846ab1cb3d755c2
