@@ -3,16 +3,16 @@ import greenfoot.*;
 
 public class BurgerWorld extends World
 {
-    private Plate plate1 = new Plate();
-    private int count = 0;
-    public int foodCount = 0;
-    private boolean bottomHasLanded = false;
-    private int score = 0;
-    private int counter = 0;
-    private int stackHeight = 340;
-    private int maxHeight = 380;
-    private boolean spawnIngredients = true; // Controls whether ingredients should spawn
-    private boolean burgerTopSpawned = false; // Ensures only one Burger Top spawns
+    protected Plate plate1 = new Plate();
+    protected int count = 0;
+    protected boolean bottomHasLanded = false;
+    protected int score = 0;
+    protected int counter = 0;
+    protected int stackHeight = 340;
+    protected int maxHeight = 380;
+    protected boolean spawnIngredients = true; // Controls whether ingredients should spawn
+    protected boolean burgerTopSpawned = false; // Ensures only one Burger Top spawns
+    protected int maxScore = 10;
     public BurgerWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -69,7 +69,7 @@ public class BurgerWorld extends World
             spawnIngredient();
        }
        showScoreBoard();
-       if (score == 10 && !burgerTopSpawned) {
+       if (score == maxScore && !burgerTopSpawned) {
             spawnBurgerTop();
             burgerTopSpawned = true; // Ensure no more Burger Tops or ingredients spawn
             spawnIngredients = false; // Stop spawning other ingredients

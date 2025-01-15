@@ -1,8 +1,8 @@
 
 import greenfoot.*;  
 
-public class BurgerWorldTwo extends World
-{
+public class BurgerWorldTwo extends BurgerWorld
+{/*
     private Plate plate1 = new Plate();
     private int count = 0;
     public int foodCount = 0;
@@ -12,15 +12,16 @@ public class BurgerWorldTwo extends World
     private int stackHeight = 340;
     private int maxHeight = 380;
     private boolean spawnIngredients = true; // Controls whether ingredients should spawn
-    private boolean burgerTopSpawned = false; // Ensures only one Burger Top spawns
+    private boolean burgerTopSpawned = false; // Ensures only one Burger Top spawns*/
     public BurgerWorldTwo()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
-        addObject(plate1, 300, 340);
-        addObject(new BurgerBottom(), getWidth()/2, 0);
+        super(); 
+        maxScore = 15;
+        //addObject(plate1, 300, 340);
+        //addObject(new BurgerBottom(), getWidth()/2, 0);
     }
-    public void setBottomHasLanded(boolean value) {
+    /*public void setBottomHasLanded(boolean value) {
         bottomHasLanded = value;
     }
     public int getPlateX(){
@@ -80,26 +81,26 @@ public class BurgerWorldTwo extends World
     
     private void spawnBurgerTop() {
         addObject(new BurgerTop(), getWidth() / 2, 0); // Spawn the Burger Top at the center top of the screen
-    }
+    }*/
 
     public void levelCompleted() {
-        showText("Level Completed! Click the Button to continue or press exit to end the game.", 200, 200);
+        showText("Level Completed! Click the Button to continue or press exit to end the game.", 300, 200);
         addObject(new NextLevel(), getWidth() / 2, getHeight() / 2 + 50);
-        //clearIngredients();
+        clearIngredients();
     }
-    //private void clearIngredients() {
-        //removeObjects(getObjects(IngredientBase.class)); 
-        //removeObjects(getObjects(BurgerBottom.class)); 
-        //removeObjects(getObjects(MoldyBread.class)); 
-        //removeObjects(getObjects(Onion.class)); 
-    //}
+    private void clearIngredients() {
+        removeObjects(getObjects(IngredientBase.class)); 
+        removeObjects(getObjects(BurgerBottom.class)); 
+        removeObjects(getObjects(MoldyBread.class)); 
+        removeObjects(getObjects(Onion.class)); 
+    }
     
     public void startNextLevel() {
         Greenfoot.setWorld(new BurgerWorldTwo());  
     }
     
     public void spawnIngredient() {
-        int pick = Greenfoot.getRandomNumber(5);
+        int pick = Greenfoot.getRandomNumber(8);
         Actor ingredient;
         if (pick == 0) {
             ingredient = new Tomato();
@@ -109,7 +110,14 @@ public class BurgerWorldTwo extends World
             ingredient = new Patty();
         } else if (pick == 3) {
             ingredient = new MoldyBread();
-        } else {
+        } else if (pick == 4){
+            ingredient = new Bacon();
+        } else if (pick == 5){
+            ingredient = new Peppers();
+        } else if (pick == 6){
+            ingredient = new Avocado();
+        }
+        else {
             ingredient = new Lettuce();
         }
         

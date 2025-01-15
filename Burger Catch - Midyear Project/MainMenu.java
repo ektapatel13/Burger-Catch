@@ -9,12 +9,15 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class MainMenu extends World {
     public MainMenu() {
-        super(660, 400, 1); 
+        super(600, 400, 1); 
+        GreenfootImage bg = new GreenfootImage("background.jpg"); // adjust filename as needed
+        bg.scale(getWidth(), getHeight());
+        setBackground(bg);
         prepare();
     }
 
     private void prepare() {
         StartButton startButton = new StartButton();
-        addObject(startButton, 330, 300);   
+        addObject(startButton, 300, 300);   
     }
 }

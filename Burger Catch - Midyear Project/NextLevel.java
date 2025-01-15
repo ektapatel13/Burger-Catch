@@ -11,7 +11,7 @@ public class NextLevel extends Actor
     public NextLevel() {
         GreenfootImage image = new GreenfootImage("nextlevel.png");
         setImage(image);
-        image.scale(140, 130);
+        image.scale(220, 80);
         setLocation(200, 300);
     }
     /**
